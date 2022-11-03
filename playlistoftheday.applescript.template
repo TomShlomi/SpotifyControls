@@ -1,0 +1,12 @@
+set playlists to {PLAYLIST1, PLAYLIST2, ...}
+set playlistsLength to length of playlists
+set x to ((current date) - (date "Sunday, October 10, 2021 at 00:00:00")) / 86400
+set x to round x rounding down
+set x to x mod playlistsLength
+set x to x + 1
+set uri to item x of playlists
+
+tell application "Spotify"
+	set shuffling to false
+	play track uri
+end tell

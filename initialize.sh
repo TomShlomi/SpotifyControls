@@ -12,3 +12,5 @@ sed -i '' "s|PTH|$PTH|g" addsong.sh
 sed -i '' "s|NODE|$NODE|g" addsong.sh
 #Create app.js
 cp app.js.template app.js
+#Create playlistoftheday.applescript
+cp playlistoftheday.applescript.template playlistoftheday.applescript
