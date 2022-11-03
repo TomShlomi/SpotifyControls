@@ -1,6 +1,6 @@
 {
   "author": "Tom Shlomi",
-  "name": "spotify-conrols",
+  "name": "spotify-controls",
   "description": "Some useful scripts for controlling Spotify via commands",
   "dependencies": {
     "cookie-parser": "^1.4.6",
