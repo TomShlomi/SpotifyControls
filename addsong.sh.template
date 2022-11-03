@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#Gets new access token
+NODE PTH/app.js > PTH/token &
+sleep 1
+NODE PTH/puppet.js
+pkill -P $$
+TOKEN=`cat PTH/token | tail -n +2`
+#Adds the song
+curl -X "POST" "https://api.spotify.com/v1/playlists/PLAYLISTID/tracks?uris=$1" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer $TOKEN" -d ""

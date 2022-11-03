@@ -1,0 +1,7 @@
+addsong.applescript
+addsong.sh
+app.js
+node_modules/
+token
+user_data/
+*.bkp
