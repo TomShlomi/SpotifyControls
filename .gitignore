@@ -6,3 +6,5 @@ token
 user_data/
 *.bkp
 playlistoftheday.applescript
+.cache*
+secrets.json

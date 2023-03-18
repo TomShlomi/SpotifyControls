@@ -1,8 +1,0 @@
-set pth to PTH
-tell application "Spotify"
-	set c to the current track
-end tell
-set sid to the "" & id of c
-set uri to text 15 thru -1 of sid
-set results to do shell script "cd " & pth & "; ./addsong.sh " & sid
-#display dialog results
