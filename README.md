@@ -7,7 +7,7 @@ This repository contains a Python script and two AppleScript files that allow yo
 - `controls.py`: A Python script that handles adding and removing songs from a playlist.
 - `template.addsong.applescript`: A template for an AppleScript that adds the currently playing song to the default playlist.
 - `template.removesong.applescript`: A template for an AppleScript that removes the currently playing song from the default playlist. 
-- template.secrets.json: A template for a JSON file that contains your Spotify API credentials.
+- `template.secrets.json`: A template for a JSON file that contains your Spotify API credentials.
 
 ## Setup
 
@@ -30,7 +30,7 @@ python3 controls.py add SONG_URI
 ```
 python3 controls.py remove SONG_URI
 ```
-where `SONG_URI` is the URI of the song you want to add or remove. You can obtain the URI of a song by right-clicking on it in Spotify, holding down the option key, and selecting "Copy Spotify URI".
+where `SONG_URI` is the URI of the song you want to add or remove. You can obtain the URI of a song by right-clicking on it in Spotify, holding down the option key, and selecting "Copy Spotify URI". Songs can only be added or removed when you have an internet connection. If you run these commands while you don't have a connection, it will store the commands in command.json and excecute them all the next time you run a command while having internet.
 
 5. Replace `"path/to/folder"` in both AppleScript files with the path to this repository's location on your computer, and rename the files to `addsong.applescript` and `removesong.applescript` respectively.
 

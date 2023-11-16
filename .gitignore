@@ -1,10 +1,13 @@
 addsong.applescript
 addsong.sh
 app.js
+commands.csv
+commands.json
 node_modules/
 token
 user_data/
 *.bkp
 playlistoftheday.applescript
 .cache*
+.vscode/
 secrets.json
