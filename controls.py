@@ -2,7 +2,6 @@ import json
 import os
 import sys
 
-import json
 import requests
 import spotipy
 import spotipy.util as util
