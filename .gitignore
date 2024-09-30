@@ -11,3 +11,4 @@ playlistoftheday.applescript
 .cache*
 .vscode/
 secrets.json
+.DS_Store
