@@ -10,7 +10,7 @@ end tell
 set track_uri to the "" & id of current_track
 
 -- Run the Python script to add the currently playing song to the default playlist
-set command to "python3 controls.py add " & track_uri
+set command to "/path/to/uv run controls.py add " & track_uri
 set results to do shell script "cd " & script_folder & "; " & command
 
 -- Uncomment the following line to display the results

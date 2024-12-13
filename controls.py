@@ -1,3 +1,13 @@
+#!uv run
+
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "spotipy >=2.24, <3",
+#     "requests >=2.32, <3",
+# ]
+# ///
+
 import json
 import os
 import sys
