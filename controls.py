@@ -37,7 +37,7 @@ try:
     )
 
     # Authenticate with the Spotify API
-    sp = spotipy.Spotify(auth=token)
+    sp = spotipy.Spotify(auth=token, requests_timeout=15)
     CONNECTED = True
 except requests.exceptions.ConnectionError:
     CONNECTED = False
